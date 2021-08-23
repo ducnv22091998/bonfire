@@ -357,8 +357,8 @@
                     &:hover .featured-items-product-actions {
                         display: block;
                     }
-                    &:hover .featured-items-product-img-action-slider {
-                        display: flex;
+                    &:hover .action-slider--left, &:hover .action-slider--right {
+                        visibility: visible;
                     }
                     // featured-items-product-img
                     & .featured-items-product-img {                        
@@ -367,21 +367,32 @@
                     }
                     // end featured-items-product-img
                     // featured-items-product-img-action-slider
-                    & .featured-items-product-img-action-slider {
+                    // & .featured-items-product-img-action-slider {
+                    //     position: absolute;
+                    //     top: 50%;
+                    //     left: 0;
+                    //     transform: translateY(-50%);
+                    //     width: 100%;
+                    //     display: none;
+                    //     justify-content: space-between;
+                    // }
+                    // end featured-items-product-img-action-slider
+                    & .action-slider--left, .action-slider--right {
+                        font-size: 2.4rem;
+                        padding: 0 6px;
+                        cursor: pointer;
                         position: absolute;
                         top: 50%;
-                        left: 0;
                         transform: translateY(-50%);
-                        width: 100%;
-                        display: none;
-                        justify-content: space-between;
-                        & .action-slider--left, .action-slider--right {
-                            font-size: 2.4rem;
-                            padding: 0 6px;
-                            // opacity: 0;
-                        }
+                        visibility: hidden;
                     }
-                    // end featured-items-product-img-action-slider
+                    & .action-slider--left {
+                        left: 0;
+                        z-index: 2;
+                    }
+                    & .action-slider--right {
+                        right: 0;
+                    }
                     // featured-items-product-actions
                     & .featured-items-product-actions {
                         position: absolute;

@@ -495,25 +495,29 @@ html {
 .main-content .featured-items .featured-items-product .featured-items-product-inner .featured-items-product-img-actions:hover .featured-items-product-actions {
   display: block;
 }
-.main-content .featured-items .featured-items-product .featured-items-product-inner .featured-items-product-img-actions:hover .featured-items-product-img-action-slider {
-  display: flex;
+.main-content .featured-items .featured-items-product .featured-items-product-inner .featured-items-product-img-actions:hover .action-slider--left,
+.main-content .featured-items .featured-items-product .featured-items-product-inner .featured-items-product-img-actions:hover .action-slider--right {
+  visibility: visible;
 }
 .main-content .featured-items .featured-items-product .featured-items-product-inner .featured-items-product-img-actions .featured-items-product-img {
   width: 100%;
 }
-.main-content .featured-items .featured-items-product .featured-items-product-inner .featured-items-product-img-actions .featured-items-product-img-action-slider {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  width: 100%;
-  display: none;
-  justify-content: space-between;
-}
-.main-content .featured-items .featured-items-product .featured-items-product-inner .featured-items-product-img-actions .featured-items-product-img-action-slider .action-slider--left,
-.main-content .featured-items .featured-items-product .featured-items-product-inner .featured-items-product-img-actions .featured-items-product-img-action-slider .action-slider--right {
+.main-content .featured-items .featured-items-product .featured-items-product-inner .featured-items-product-img-actions .action-slider--left,
+.main-content .featured-items .featured-items-product .featured-items-product-inner .featured-items-product-img-actions .action-slider--right {
   font-size: 2.4rem;
   padding: 0 6px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  visibility: hidden;
+}
+.main-content .featured-items .featured-items-product .featured-items-product-inner .featured-items-product-img-actions .action-slider--left {
+  left: 0;
+  z-index: 2;
+}
+.main-content .featured-items .featured-items-product .featured-items-product-inner .featured-items-product-img-actions .action-slider--right {
+  right: 0;
 }
 .main-content .featured-items .featured-items-product .featured-items-product-inner .featured-items-product-img-actions .featured-items-product-actions {
   position: absolute;
@@ -788,6 +792,64 @@ html {
     border-radius: 15px;
     font-size: 1.2rem;
   }
+  .main-content .banner .banner-inner .banner-item-s-inner .banner-item-detail-3 .banner-title-banner-item-3 {
+    font-size: 4.2rem;
+  }
+  .main-content .banner .banner-inner .banner-item-l-inner .banner-item-detail-banner-2 {
+    position: absolute;
+    background: url('../img/banner/square-banner-item-2.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    top: 50%;
+    right: 0%;
+    transform: translateY(-50%);
+    width: 50%;
+    height: 80%;
+    margin-right: 10px;
+  }
+  .main-content .banner .banner-inner .banner-item-l-inner .banner-item-detail-banner-2 .banner-item-detail--l {
+    text-align: center;
+  }
+  .main-content .banner .banner-inner .banner-item-l-inner .banner-item-detail-banner-2 .banner-item-detail--l .banner-title--l {
+    font-family: 'FiraSans';
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #333;
+    letter-spacing: 4px;
+    padding-top: 26px;
+  }
+  .main-content .banner .banner-inner .banner-item-l-inner .banner-item-detail-banner-2 .banner-item-detail--l .banner-percent--l {
+    font-family: 'CormorantGaramond';
+    font-weight: 600;
+    font-size: 8rem;
+    color: #333;
+    padding-top: 2px;
+  }
+  .main-content .banner .banner-inner .banner-item-l-inner .banner-item-detail-banner-2 .banner-item-detail--l .banner-content--l {
+    font-family: 'CormorantGaramond';
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #696969;
+    padding-top: 12px;
+  }
+  .main-content .banner .banner-inner .banner-item-l-inner .banner-item-detail-banner-2 .banner-item-detail--l .btn--l {
+    font-size: 1rem;
+    letter-spacing: 3px;
+    line-height: 64px;
+    color: #696969;
+    font-weight: 600;
+    font-family: 'FiraSans';
+    text-transform: uppercase;
+    padding: 0 0;
+    display: block;
+    margin-top: 15px;
+  }
+  .main-content .banner .banner-inner .banner-item-l-inner .banner-item-detail-l--6 {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    padding-left: 12px;
+  }
 }
 @media all and (max-width: 1024px) {
   .navbar .navbar-inner {
@@ -817,6 +879,64 @@ html {
     text-align: center;
     border-radius: 15px;
     font-size: 0.8rem;
+  }
+  .main-content .banner .banner-inner .banner-item-s-inner .banner-item-detail-3 .banner-title-banner-item-3 {
+    font-size: 4.2rem;
+  }
+  .main-content .banner .banner-inner .banner-item-l-inner .banner-item-detail-banner-2 {
+    position: absolute;
+    background: url('../img/banner/square-banner-item-2.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    top: 50%;
+    right: 0%;
+    transform: translateY(-50%);
+    width: 50%;
+    height: 80%;
+    margin-right: 10px;
+  }
+  .main-content .banner .banner-inner .banner-item-l-inner .banner-item-detail-banner-2 .banner-item-detail--l {
+    text-align: center;
+  }
+  .main-content .banner .banner-inner .banner-item-l-inner .banner-item-detail-banner-2 .banner-item-detail--l .banner-title--l {
+    font-family: 'FiraSans';
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #333;
+    letter-spacing: 4px;
+    padding-top: 26px;
+  }
+  .main-content .banner .banner-inner .banner-item-l-inner .banner-item-detail-banner-2 .banner-item-detail--l .banner-percent--l {
+    font-family: 'CormorantGaramond';
+    font-weight: 600;
+    font-size: 8rem;
+    color: #333;
+    padding-top: 2px;
+  }
+  .main-content .banner .banner-inner .banner-item-l-inner .banner-item-detail-banner-2 .banner-item-detail--l .banner-content--l {
+    font-family: 'CormorantGaramond';
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #696969;
+    padding-top: 12px;
+  }
+  .main-content .banner .banner-inner .banner-item-l-inner .banner-item-detail-banner-2 .banner-item-detail--l .btn--l {
+    font-size: 1rem;
+    letter-spacing: 3px;
+    line-height: 64px;
+    color: #696969;
+    font-weight: 600;
+    font-family: 'FiraSans';
+    text-transform: uppercase;
+    padding: 0 0;
+    display: block;
+    margin-top: 15px;
+  }
+  .main-content .banner .banner-inner .banner-item-l-inner .banner-item-detail-l--6 {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    padding-left: 12px;
   }
   .main-content .featured-items .featured-items-product .featured-items-product-resp {
     flex: 0 0 auto;
@@ -952,21 +1072,111 @@ html {
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .main-content .banner .banner-item-s-inner {
-    max-width: 30.72916667%;
-    position: relative;
-    margin: 15px auto;
-  }
-  .main-content .banner .banner-item-s-inner img {
+  .main-content .banner .banner-inner .banner-item-1 {
+    order: 2;
     width: 100%;
   }
-  .main-content .banner .banner-item-l-inner {
-    max-width: 61.45833333%;
-    position: relative;
-    margin: 15px auto;
+  .main-content .banner .banner-inner .banner-item-2 {
+    order: 1;
   }
-  .main-content .banner .banner-item-l-inner img {
+  .main-content .banner .banner-inner .banner-item-3 {
+    order: 3;
+  }
+  .main-content .banner .banner-inner .banner-item-4 {
+    order: 4;
+  }
+  .main-content .banner .banner-inner .banner-item-5 {
+    order: 5;
+  }
+  .main-content .banner .banner-inner .banner-item-6 {
+    order: 6;
+  }
+  .main-content .banner .banner-inner .banner-item-s-inner {
+    max-width: calc(50% - 15px);
+    position: relative;
+  }
+  .main-content .banner .banner-inner .banner-item-s-inner img {
     width: 100%;
+  }
+  .main-content .banner .banner-inner .banner-item-s-inner .banner-item-detail-3 {
+    position: absolute;
+    left: 0%;
+    bottom: 16%;
+    width: 100%;
+  }
+  .main-content .banner .banner-inner .banner-item-s-inner .banner-item-detail-3 .banner-summary-banner-item-3 {
+    font-size: 1.4rem;
+    letter-spacing: 3px;
+    line-height: 24px;
+    color: #333;
+    font-weight: 400;
+    font-family: "FiraSans";
+    text-transform: uppercase;
+    padding: 0 0 34px 50px;
+  }
+  .main-content .banner .banner-inner .banner-item-s-inner .banner-item-detail-3 .banner-title-banner-item-3 {
+    font-size: 7.2rem;
+    line-height: 47px;
+    color: #d6ba8d;
+    font-weight: 600;
+    font-family: "Cormorant Garamond";
+    text-align: center;
+  }
+  .main-content .banner .banner-inner .banner-item-l-inner {
+    max-width: 100%;
+    position: relative;
+  }
+  .main-content .banner .banner-inner .banner-item-l-inner img {
+    width: 100%;
+  }
+  .main-content .banner .banner-inner .banner-item-l-inner .banner-item-detail-banner-2 {
+    position: absolute;
+    background: url('../img/banner/square-banner-item-2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 50%;
+    right: 0%;
+    transform: translateY(-50%);
+    width: 280px;
+    height: 340px;
+    margin-right: 36px;
+  }
+  .main-content .banner .banner-inner .banner-item-l-inner .banner-item-detail-banner-2 .banner-item-detail--l {
+    text-align: center;
+  }
+  .main-content .banner .banner-inner .banner-item-l-inner .banner-item-detail-banner-2 .banner-item-detail--l .banner-title--l {
+    font-family: 'FiraSans';
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: #333;
+    letter-spacing: 4px;
+    padding-top: 41px;
+  }
+  .main-content .banner .banner-inner .banner-item-l-inner .banner-item-detail-banner-2 .banner-item-detail--l .banner-percent--l {
+    font-family: 'CormorantGaramond';
+    font-weight: 600;
+    font-size: 10rem;
+    color: #333;
+    padding-top: 2px;
+  }
+  .main-content .banner .banner-inner .banner-item-l-inner .banner-item-detail-banner-2 .banner-item-detail--l .banner-content--l {
+    font-family: 'CormorantGaramond';
+    font-weight: 600;
+    font-size: 2.4rem;
+    color: #696969;
+    padding-top: 12px;
+  }
+  .main-content .banner .banner-inner .banner-item-l-inner .banner-item-detail-banner-2 .banner-item-detail--l .btn--l {
+    font-size: 1.4rem;
+    letter-spacing: 3px;
+    line-height: 64px;
+    color: #696969;
+    font-weight: 600;
+    font-family: 'FiraSans';
+    text-transform: uppercase;
+    padding: 10px 12px;
+    display: block;
+    margin-top: 32px;
   }
   .main-content .featured-items .featured-items-title {
     margin: 92px 92px 64px 0px;
@@ -1206,21 +1416,77 @@ html {
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .main-content .banner .banner-item-s-inner {
-    max-width: 92%;
+  .main-content .banner .banner-inner .banner-item-s-inner {
+    max-width: calc(50% -15px);
     position: relative;
-    margin: 15px auto;
   }
-  .main-content .banner .banner-item-s-inner img {
+  .main-content .banner .banner-inner .banner-item-s-inner img {
     width: 100%;
   }
-  .main-content .banner .banner-item-l-inner {
-    max-width: 92%;
-    position: relative;
-    margin: 15px auto;
+  .main-content .banner .banner-inner .banner-item-s-inner .banner-item-detail-3 .banner-title-banner-item-3 {
+    font-size: 5.2rem;
   }
-  .main-content .banner .banner-item-l-inner img {
+  .main-content .banner .banner-inner .banner-item-l-inner {
+    max-width: 100%;
+    position: relative;
+  }
+  .main-content .banner .banner-inner .banner-item-l-inner img {
     width: 100%;
+  }
+  .main-content .banner .banner-inner .banner-item-l-inner .banner-item-detail-banner-2 {
+    position: absolute;
+    background: url('../img/banner/square-banner-item-2.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    top: 50%;
+    right: 0%;
+    transform: translateY(-50%);
+    width: 50%;
+    height: 80%;
+    margin-right: 10px;
+  }
+  .main-content .banner .banner-inner .banner-item-l-inner .banner-item-detail-banner-2 .banner-item-detail--l {
+    text-align: center;
+  }
+  .main-content .banner .banner-inner .banner-item-l-inner .banner-item-detail-banner-2 .banner-item-detail--l .banner-title--l {
+    font-family: 'FiraSans';
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #333;
+    letter-spacing: 4px;
+    padding-top: 26px;
+  }
+  .main-content .banner .banner-inner .banner-item-l-inner .banner-item-detail-banner-2 .banner-item-detail--l .banner-percent--l {
+    font-family: 'CormorantGaramond';
+    font-weight: 600;
+    font-size: 8rem;
+    color: #333;
+    padding-top: 2px;
+  }
+  .main-content .banner .banner-inner .banner-item-l-inner .banner-item-detail-banner-2 .banner-item-detail--l .banner-content--l {
+    font-family: 'CormorantGaramond';
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #696969;
+    padding-top: 12px;
+  }
+  .main-content .banner .banner-inner .banner-item-l-inner .banner-item-detail-banner-2 .banner-item-detail--l .btn--l {
+    font-size: 1rem;
+    letter-spacing: 3px;
+    line-height: 64px;
+    color: #696969;
+    font-weight: 600;
+    font-family: 'FiraSans';
+    text-transform: uppercase;
+    padding: 0 0;
+    display: block;
+    margin-top: 15px;
+  }
+  .main-content .banner .banner-inner .banner-item-l-inner .banner-item-detail-l--6 {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    padding-left: 12px;
   }
   .main-content .strength .strength-resp {
     flex: 0 0 auto;
@@ -1453,21 +1719,97 @@ html {
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .main-content .banner .banner-item-s-inner {
-    max-width: 92%;
+  .main-content .banner .banner-inner .banner-item-s-inner {
+    max-width: 100%;
     position: relative;
-    margin: 15px auto;
   }
-  .main-content .banner .banner-item-s-inner img {
+  .main-content .banner .banner-inner .banner-item-s-inner img {
     width: 100%;
   }
-  .main-content .banner .banner-item-l-inner {
-    max-width: 92%;
-    position: relative;
-    margin: 15px auto;
+  .main-content .banner .banner-inner .banner-item-s-inner .banner-item-detail-3 .banner-title-banner-item-3 {
+    font-size: 6.2rem;
   }
-  .main-content .banner .banner-item-l-inner img {
+  .main-content .banner .banner-inner .banner-item-l-inner {
+    max-width: 100%;
+    position: relative;
+  }
+  .main-content .banner .banner-inner .banner-item-l-inner img {
     width: 100%;
+  }
+  .main-content .banner .banner-inner .banner-item-l-inner .banner-item-detail-banner-2 {
+    position: absolute;
+    background: url('../img/banner/square-banner-item-2.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    top: 50%;
+    right: 0%;
+    transform: translateY(-50%);
+    width: 50%;
+    height: 80%;
+    margin-right: 10px;
+  }
+  .main-content .banner .banner-inner .banner-item-l-inner .banner-item-detail-banner-2 .banner-item-detail--l {
+    text-align: center;
+  }
+  .main-content .banner .banner-inner .banner-item-l-inner .banner-item-detail-banner-2 .banner-item-detail--l .banner-title--l {
+    font-family: 'FiraSans';
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #333;
+    letter-spacing: 4px;
+    padding-top: 4px;
+  }
+  .main-content .banner .banner-inner .banner-item-l-inner .banner-item-detail-banner-2 .banner-item-detail--l .banner-percent--l {
+    font-family: 'CormorantGaramond';
+    font-weight: 600;
+    font-size: 4rem;
+    color: #333;
+    padding-top: 2px;
+  }
+  .main-content .banner .banner-inner .banner-item-l-inner .banner-item-detail-banner-2 .banner-item-detail--l .banner-content--l {
+    font-family: 'CormorantGaramond';
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #696969;
+    padding-top: 12px;
+  }
+  .main-content .banner .banner-inner .banner-item-l-inner .banner-item-detail-banner-2 .banner-item-detail--l .btn--l {
+    font-size: 1rem;
+    letter-spacing: 3px;
+    line-height: 64px;
+    color: #696969;
+    font-weight: 600;
+    font-family: 'FiraSans';
+    text-transform: uppercase;
+    padding: 0 0;
+    display: block;
+    margin-top: 15px;
+  }
+  .main-content .banner .banner-inner .banner-item-l-inner .banner-item-detail-l--6 {
+    position: absolute;
+    top: 8%;
+    left: 5%;
+    padding-left: 12px;
+  }
+  .main-content .banner .banner-inner .banner-item-l-inner .banner-item-detail-l--6 .banner-title-1--6 {
+    width: 80%;
+    height: 70px;
+    font-size: 2.4rem;
+    line-height: 34px;
+    color: #333;
+    font-weight: 700;
+    font-family: 'CormorantGaramond';
+    padding-top: 2px;
+  }
+  .main-content .banner .banner-inner .banner-item-l-inner .banner-item-detail-l--6 .banner-content-1--6 {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    line-height: 24px;
+    color: #696969;
+    font-family: 'FiraSans';
+    width: 170px;
+    padding-top: 2px;
+    padding-left: 2px;
   }
   .main-content .featured-items .featured-items-title .featured-items-title-resp {
     flex: 0 0 auto;
